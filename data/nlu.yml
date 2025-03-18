@@ -1,0 +1,80 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - what's up?
+    - yo
+    - howdy
+    - morning
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - bye
+    - take care
+    - talk to you later
+    - adios
+    - see ya
+    - have a good day
+
+- intent: affirm
+  examples: |
+    - yes
+    - yup
+    - yeah
+    - sure
+    - of course
+    - absolutely
+    - indeed
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - I don't think so
+    - not really
+    - never
+
+- intent: mood_great
+  examples: |
+    - I feel awesome!
+    - I’m happy
+    - I am doing great
+    - Everything is going well
+    - Life is amazing
+    - I’m feeling fantastic!
+
+- intent: mood_unhappy
+  examples: |
+    - I am feeling down
+    - I’m sad
+    - Not doing well
+    - I feel terrible
+    - I'm having a bad day
+    - I feel hopeless
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - what are you?
+    - who made you?
+    - are you real?
+    - am I talking to a real person?
+
+- intent: nlu_fallback
+  examples: |
+    - 1234abc
+    - asdkjhfak
+    - random text
+    - blah blah
+    - sjdfhskjdfh
+    - something weird

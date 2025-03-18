@@ -1,0 +1,8 @@
+# files to be ignored
+
+rasa_env/
+.rasa/
+models/
+.env
+
+*.log
