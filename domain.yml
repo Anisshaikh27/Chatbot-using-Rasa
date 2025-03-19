@@ -31,8 +31,8 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_out_of_scope:
-  - text: "I'm not sure about that. Let me check..."
+  # utter_out_of_scope:
+  # - text: "I'm not sure about that. Let me check..."
 
 session_config:
   session_expiration_time: 60
