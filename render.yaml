@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: rasa-chatbot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: oregon
+    branch: main
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+    scaling:
+      minInstances: 1
+      maxInstances: 1

@@ -29,7 +29,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Anis."
 
   # utter_out_of_scope:
   # - text: "I'm not sure about that. Let me check..."

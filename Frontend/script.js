@@ -10,8 +10,9 @@ function sendMessage() {
     const messageText = userInput.value;
     userInput.value = "";
 
+    const API_URL = 'https://your-rasa-service.onrender.com/webhooks/rest/webhook';
     // Send user message to Rasa backend
-    fetch("http://localhost:5005/webhooks/rest/webhook", {
+    fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: messageText, sender: "user" })

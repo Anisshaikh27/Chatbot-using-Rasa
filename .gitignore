@@ -2,7 +2,7 @@
 
 rasa_env/
 .rasa/
-models/
+
 .env
 
 *.log

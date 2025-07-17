@@ -17,7 +17,12 @@ class ActionHandleOutOfScope(Action):
     def name(self):
         return "action_handle_out_of_scope"
 
-    def run(self, dispatcher, tracker, domain):
+  def run(self, dispatcher, tracker, domain):
+        # Get API key from environment
+        api_key = os.getenv("GROQ_API_KEY")
+        if not api_key:
+            dispatcher.utter_message(text="Sorry, I'm having trouble accessing external services right now.")
+            return []
         user_message = tracker.latest_message.get("text")
         
         # API Request
